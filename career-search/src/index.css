@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active{
+  @apply text-lg font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-500 hover:text-violet-700 transition-colors duration-200
+}
+.default{
+  @apply text-lg font-semibold tracking-wide text-slate-600 hover:text-violet-700 transition-colors duration-200
+}
+.container{
+  @apply max-w-xl mx-auto md:max-w-full lg:max-w-screen-xl px-5
+}
+.btn {
+  @apply px-6 py-3 font-medium text-white transition duration-200 rounded shadow-md  bg-gradient-to-r from-violet-400 to-purple-500 hover:bg-violet-600;
+}
