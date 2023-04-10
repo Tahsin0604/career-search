@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "companyLogo": "/public/All Images/job-1.png",
+    "jobTitle": "Frontend Developer",
+    "companyName": "Google",
+    "remoteOrOnsite": "Remote",
+    "location": "Any Location",
+    "fulltimeOrPartTime": "Full-time",
+    "salary": "70K - 90K",
+    "jobDescription": "We are seeking a highly skilled Software Engineer to join our development team. The ideal candidate will have a strong background in software development, with expertise in multiple programming languages and frameworks. As a Software Engineer, you will be responsible for designing, coding, testing, and debugging software applications, as well as collaborating with cross-functional teams to deliver high-quality software solutions.",
+    "jobResponsibility": "Responsibilities include designing, coding, testing, and debugging software applications using multiple programming languages and frameworks, collaborating with cross-functional teams, participating in code reviews, investigating and resolving software defects and issues, and maintaining documentation of software design, coding, and testing activities.",
+    "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in frontend development",
+    "contactInformation": {
+      "phone": "123-456-7890",
+      "email": "jobs@google.com"
+    }
+  },
+  {
+    "id": 2,
+    "companyLogo": "/public/All Images/job-2.png",
+    "jobTitle": "UX Designer",
+    "companyName": "Airbnb",
+    "remoteOrOnsite": "Onsite",
+    "location": "New York, NY",
+    "fulltimeOrPartTime": "Full-time",
+    "salary": "80K - 100K",
+    "jobDescription": "We are hiring a UX/UI Designer to join our design team. The ideal candidate will have a strong portfolio showcasing their expertise in user-centered design, wireframing, prototyping, and visual design. As a UX/UI Designer, you will be responsible for creating intuitive and visually appealing user interfaces, conducting user research, and collaborating with cross-functional teams to deliver exceptional user experiences.",
+    "jobResponsibility": "Responsibilities include creating user interfaces using user-centered design principles, conducting user research to inform design decisions, creating wireframes and prototypes, collaborating with cross-functional teams, and ensuring the visual design and overall user experience align with business goals and user needs.",
+    "educationalRequirements": "Bachelor's or Master's degree in Design or related field",
+    "experiences": "2+ years of experience in UX design",
+    "contactInformation": {
+      "phone": "555-123-4567",
+      "email": "careers@airbnb.com"
+    }
+  },
+  {
+    "id": 3,
+    "companyLogo": "/public/All Images/job-3.png",
+    "jobTitle": "Data Scientist",
+    "companyName": "Netflix",
+    "remoteOrOnsite": "Remote",
+    "location": "Any Location",
+    "fulltimeOrPartTime": "Full-time",
+    "salary": "90K - 110K",
+    "jobDescription": "We are looking for a skilled Data Scientist to join our analytics team. The ideal candidate will have a strong background in data analysis and machine learning, with experience in data modeling, statistical analysis, and programming. As a Data Scientist, you will be responsible for analyzing large datasets, developing predictive models, and providing insights and recommendations to drive data-driven decision-making.",
+    "jobResponsibility": "Responsibilities include analyzing large datasets using data modeling and statistical analysis techniques, developing predictive models, providing insights and recommendations based on data analysis, collaborating with cross-functional teams, and staying up-to-date with the latest industry trends and best practices in data science.",
+    "educationalRequirements": "Master's or PhD in Computer Science, Statistics, or related field",
+    "experiences": "5+ years of experience in data science",
+    "contactInformation": {
+      "phone": "789-456-1230",
+      "email": "jobs@netflix.com"
+    }
+  },
+  {
+    "id": 4,
+    "companyLogo": "/public/All Images/job-4.png",
+    "jobTitle": "Graphic Designer",
+    "companyName": "Tesla",
+    "remoteOrOnsite": "Remote",
+    "location": "Any Location",
+    "fulltimeOrPartTime": "Part-time",
+    "salary": "30 - 40 per hour",
+    "jobDescription": "We are seeking a talented Graphic Designer to join our creative team. The ideal candidate will have a strong portfolio showcasing their expertise in graphic design, branding, and visual communication. As a Graphic Designer, you will be responsible for creating visually appealing designs for print and digital media, collaborating with clients and internal teams to understand design requirements, and delivering high-quality designs that align with brand guidelines.",
+    "jobResponsibility": "Responsibilities include creating visually appealing designs for print and digital media, collaborating with clients and internal teams to understand design requirements, interpreting brand guidelines and incorporating them into design concepts, presenting design concepts and incorporating feedback, and delivering high-quality designs within deadlines.",
+    "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
+    "experiences": "2+ years of experience in graphic design",
+    "contactInformation": {
+      "phone": "999-234-5678",
+      "email": "careers@tesla.com"
+    }
+  },
+  {
+    "id": 5,
+    "companyLogo": "/public/All Images/job-5.png",
+    "jobTitle": "Frontend Developer",
+    "companyName": "Microsoft",
+    "remoteOrOnsite": "Onsite",
+    "location": "New York, NY",
+    "fulltimeOrPartTime": "Full-time",
+    "salary": "70K - $90K",
+    "jobDescription": "We are looking for a skilled Front-End Developer to join our development team. The ideal candidate will have a strong background in front-end web development, with expertise in HTML, CSS, and JavaScript. As a Front-End Developer, you will be responsible for designing and implementing user interfaces, optimizing web performance, and collaborating with cross-functional teams to deliver visually appealing and responsive web applications.",
+    "jobResponsibility": "Responsibilities include designing and implementing user interfaces using HTML, CSS, and JavaScript, optimizing web performance for improved user experience, collaborating with cross-functional teams to ensure seamless integration with back-end systems, troubleshooting and resolving front-end issues, and staying up-to-date with the latest front-end web development trends and best practices.",
+    "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in frontend development",
+    "contactInformation": {
+      "phone": "777-123-4567",
+      "email": "jobs@microsoft.com"
+    }
+  },
+  {
+    "id": 6,
+    "companyLogo": "/public/All Images/job-6.png",
+    "jobTitle": "Human Resources Manager",
+    "companyName": "Twitter",
+    "remoteOrOnsite": "Onsite",
+    "location": "Chicago, IL",
+    "fulltimeOrPartTime": "Full-time",
+    "salary": "60K - 80K",
+    "jobDescription": "We are seeking an experienced Human Resources Manager to join our HR team. The ideal candidate will have a strong background in HR management, talent acquisition, employee relations, and HR policies and procedures. As an HR Manager, you will be responsible for developing and implementing HR strategies, managing recruitment and selection processes, overseeing employee relations, ensuring compliance with HR laws and regulations, and providing HR support and guidance to management and employees.",
+    "jobResponsibility": "Responsibilities include analyzing large datasets using statistical techniques, developing machine learning models for predictive analytics, interpreting and communicating findings to stakeholders in a clear and concise manner, identifying data-driven opportunities for business improvement, collaborating with cross-functional teams to implement data solutions, and staying updated with the latest advancements in data science and machine learning techniques.",
+    "educationalRequirements": "Bachelor's or Master's degree in Human Resources or related field",
+    "experiences": "5+ years of experience in HR management",
+    "contactInformation": {
+      "phone": "888-789-4560",
+      "email": "careers@twitter.com"
+    }
+  }
+]
+

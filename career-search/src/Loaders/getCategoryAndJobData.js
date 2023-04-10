@@ -1,9 +1,13 @@
-const getCategory=async ()=>{
-  const res=await fetch('category.json');
-  const category=await res.json();
-  return category;
-}
-const getJobList=async ()=>{
-  const res=await fetch('jobList.jason');
-}
-export default getCategory;
+const getData = async () => {
+  const res1 = await fetch("category.json");
+  const categories = await res1.json();
+  
+  const res2 = await fetch("jobList.json");
+  const jobLists =await res2.json();
+  console.log(jobLists);
+  const showFirstFourJobs = jobLists.slice(0,4);
+  console.log(showFirstFourJobs);
+  return { categories, jobLists, showFirstFourJobs }
+};
+
+export default getData;

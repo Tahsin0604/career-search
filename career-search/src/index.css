@@ -22,3 +22,6 @@
 .paragraph{
   @apply  text-slate-700 tracking-wide
 }
+.tag{
+  @apply py-2 text-violet-600 font-semibold border-2 border-solid border-violet-400 rounded-md w-32 text-center
+}
