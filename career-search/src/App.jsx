@@ -8,7 +8,6 @@ export const JobListsContext = createContext([]);
 export const TopFourJobsContext = createContext([]);
 const App = () => {
   const { categories, jobLists, showFirstFourJobs } = useLoaderData();
-  console.log(categories, jobLists, showFirstFourJobs);
   return (
     <CategoriesContext.Provider value={categories}>
       <JobListsContext.Provider value={jobLists}>

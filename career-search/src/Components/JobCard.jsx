@@ -3,7 +3,6 @@ import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const JobCard = ({ job }) => {
-  console.log(job);
   return (
     <div className="py-3 px-4 border border-solid border-slate-300 rounded-md">
       <img src={job.companyLogo} alt="" className="w-20 h-10" />
@@ -26,7 +25,7 @@ const JobCard = ({ job }) => {
         </div>
       </div>
       <div className="my-2">
-      <Link to="/" className="btn">View Details</Link>
+      <Link to={`../job/${job.id}`} className="btn">View Details</Link>
       </div>
       
     </div>

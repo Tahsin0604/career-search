@@ -9,11 +9,14 @@ const Home = () => {
 
   const categories = useContext(CategoriesContext);
   const jobLists = useContext(JobListsContext);
-  console.log(jobLists);
+  
   const topFourJobs = useContext(TopFourJobsContext);
   return (
     <div>
+      {/* Banner section */}
       <Banner />
+
+      {/* Category section */}
       <section className="container py-4">
         <h1 className="heading text-center">Job Category List</h1>
         <p className="paragraph text-center">
@@ -26,6 +29,8 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* Job List Section */}
       <section className="container py-6">
       <h1 className="heading text-center">Featured Jobs</h1>
         <p className="paragraph text-center mb-9">

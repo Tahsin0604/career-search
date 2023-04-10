@@ -15,7 +15,7 @@ const ErrorPage = () => {
             {status||404}
           </h2>
           <p className='font-semibold  text-2xl md:text-3xl text-slate-700 mt-9 mb-12'>{error?.message}</p>
-          <Link to='/' className='btn'>Back to HomePage</Link>
+          <Link to='../' className='btn'>Back to HomePage</Link>
         </div>
       
     </div>

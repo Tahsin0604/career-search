@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home";
 import getData from "./Loaders/getCategoryAndJobData";
 import ErrorPage from "./Components/ErrorPage";
+import JobDetails from "./Components/JobDetails";
+import getJobDetails from "./Loaders/getSingleJob";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,11 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home />,
+      },
+      {
+        path:"/job/:id",
+        element:<JobDetails />,
+        loader:getJobDetails
       }
     ]
   },
