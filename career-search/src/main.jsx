@@ -4,15 +4,17 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home";
+import getCategory from "./Loaders/getCategoryAndJobData";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader:getCategory,
     children:[
       {
         path:"/",
-        element:<Home />
+        element:<Home />,
       }
     ]
   },

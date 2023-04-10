@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Header from './Components/Header';
-import Home from './Components/Home';
+import { useLoaderData } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
 
+export const CategoriesContext=createContext([]);
 const App = () => {
+  const categories = useLoaderData();
   return (
-    <div>
-      <Header></Header>
-      <Outlet/>
-    </div>
+    
+      <CategoriesContext.Provider value={categories}>
+        <Header />
+        <Outlet />
+      </CategoriesContext.Provider>
+    
   );
 };
 

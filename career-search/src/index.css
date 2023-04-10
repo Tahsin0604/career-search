@@ -13,3 +13,12 @@
 .btn {
   @apply px-6 py-3 font-medium text-white transition duration-200 rounded shadow-md  bg-gradient-to-r from-violet-400 to-purple-500 hover:bg-violet-600;
 }
+.heading{
+  @apply text-3xl text-slate-700 font-extrabold tracking-wide my-6
+}
+.sub-title{
+  @apply text-xl text-slate-700 font-bold tracking-wide
+}
+.paragraph{
+  @apply  text-slate-700 tracking-wide
+}

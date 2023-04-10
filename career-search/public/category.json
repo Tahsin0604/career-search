@@ -1,0 +1,22 @@
+[
+  {
+    "categoryLogo": "/Icons/logo-1.png",
+    "categoryName": "Software Development",
+    "jobsAvailable": 1500
+  },
+  {
+    "categoryLogo": "/Icons/logo-2.png",
+    "categoryName": "Data Science",
+    "jobsAvailable": 800
+  },
+  {
+    "categoryLogo": "/Icons/logo-3.png",
+    "categoryName": "Graphic Design",
+    "jobsAvailable": 450
+  },
+  {
+    "categoryLogo": "/Icons/logo-4.png",
+    "categoryName": "Marketing",
+    "jobsAvailable": 1200
+  }
+]
