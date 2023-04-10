@@ -18,7 +18,7 @@ const Header = () => {
           <ul className="hidden lg:flex justify-between items-center space-x-5">
             <li>
               <NavLink
-                to="/"
+                to="/statistics"
                 className={({ isActive }) => (isActive ? "active" : "default")}
               >
                 Statistics
@@ -54,7 +54,7 @@ const Header = () => {
         <ul className={`flex-col space-y-1 mt-4 divide-y-2 divide-slate-300 bg-gray-50 p-2 rounded-md ${isOpen?'flex':'hidden'}`}>
           <li>
             <NavLink
-              to="/"
+              to="/statistics"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Statistics

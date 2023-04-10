@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "companyLogo": "/public/All Images/job-1.png",
+    "companyLogo": "/All Images/job-1.png",
     "jobTitle": "Frontend Developer",
     "companyName": "Google",
     "remoteOrOnsite": "Remote",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "companyLogo": "/public/All Images/job-2.png",
+    "companyLogo": "/All Images/job-2.png",
     "jobTitle": "UX Designer",
     "companyName": "Airbnb",
     "remoteOrOnsite": "Onsite",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "companyLogo": "/public/All Images/job-3.png",
+    "companyLogo": "/All Images/job-3.png",
     "jobTitle": "Data Scientist",
     "companyName": "Netflix",
     "remoteOrOnsite": "Remote",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "companyLogo": "/public/All Images/job-4.png",
+    "companyLogo": "/All Images/job-4.png",
     "jobTitle": "Graphic Designer",
     "companyName": "Tesla",
     "remoteOrOnsite": "Remote",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "companyLogo": "/public/All Images/job-5.png",
+    "companyLogo": "/All Images/job-5.png",
     "jobTitle": "Frontend Developer",
     "companyName": "Microsoft",
     "remoteOrOnsite": "Onsite",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "companyLogo": "/public/All Images/job-6.png",
+    "companyLogo": "/All Images/job-6.png",
     "jobTitle": "Human Resources Manager",
     "companyName": "Twitter",
     "remoteOrOnsite": "Onsite",
