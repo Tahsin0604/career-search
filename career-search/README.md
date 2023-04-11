@@ -6,10 +6,10 @@ This is a platform for searching and applying for desire jobs
 Documentation Link -> [link](https://reactrouter.com/en/main)
 
 # CSS Framework : Tailwind
-Documentation Link -> [link]('https://tailwindcss.com/')
+Documentation Link -> [link](https://tailwindcss.com/)
 
 # HeroIcons
-Documentation Link -> [link]('https://heroicons.com/')
+Documentation Link -> [link](https://heroicons.com/)
 
 # Recharts
-Documentation Link -> [link]('https://recharts.org/en-US/')
+Documentation Link -> [link](https://recharts.org/en-US/)

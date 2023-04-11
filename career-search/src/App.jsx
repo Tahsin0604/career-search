@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 import Header from "./Components/Header";
 import { useLoaderData } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 export const CategoriesContext = createContext([]);
 export const JobListsContext = createContext([]);
@@ -18,6 +19,7 @@ const App = () => {
           <AppliedJobsContext.Provider value={[appliedJobs, setAppliedJobs]}>
             <Header />
             <Outlet />
+            <Footer />
           </AppliedJobsContext.Provider>
         </TopFourJobsContext.Provider>
       </JobListsContext.Provider>

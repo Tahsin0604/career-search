@@ -31,7 +31,7 @@ const Home = () => {
       </section>
 
       {/* Job List Section */}
-      <section className="container py-6">
+      <section className="container py-6 mb-8">
       <h1 className="heading text-center">Featured Jobs</h1>
         <p className="paragraph text-center mb-9">
         Explore thousands of job opportunities with all the information you need. Its your future
