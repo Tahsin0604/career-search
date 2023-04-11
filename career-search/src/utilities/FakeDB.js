@@ -9,8 +9,7 @@ const getJObs = () => {
 
 const addJobs = (id, title) => {
   let storeJObs = getJObs();
-  console.log(storeJObs);
-  console.log(id,title);
+  
   storeJObs[id] = title;
   localStorage.setItem("job-list", JSON.stringify(storeJObs));
 };
