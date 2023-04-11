@@ -51,7 +51,7 @@ const Header = () => {
             }
           </button>
         </div>
-        <ul className={`flex-col space-y-1 mt-4 divide-y-2 divide-slate-300 bg-gray-50 p-2 rounded-md ${isOpen?'flex':'hidden'}`}>
+        <ul className={`flex-col space-y-1 lg:hidden mt-4 divide-y-2 divide-slate-300 bg-gray-50 p-2 rounded-md ${isOpen?'flex':'hidden'}`}>
           <li>
             <NavLink
               to="/statistics"
