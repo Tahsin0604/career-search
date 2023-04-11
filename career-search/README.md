@@ -8,11 +8,11 @@ Documentation Link -> [link](https://reactrouter.com/en/main)
 # CSS Framework : Tailwind
 Documentation Link -> [link](https://tailwindcss.com/)
 
-# HeroIcons
+# HeroIcons:
 Documentation Link -> [link](https://heroicons.com/)
 
-# Recharts
+# Recharts:
 Documentation Link -> [link](https://recharts.org/en-US/)
 
-# Live Site
+# Live Site:
 netlify link => [link](https://careersearch.netlify.app/)
