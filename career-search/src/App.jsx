@@ -10,7 +10,6 @@ export const AppliedJobsContext = createContext([]);
 const App = () => {
   const { categories, jobLists, showFirstFourJobs, initialJObs } =
     useLoaderData();
-  console.log(initialJObs);
   const [appliedJobs, setAppliedJobs] = useState(initialJObs);
   return (
     <CategoriesContext.Provider value={categories}>
