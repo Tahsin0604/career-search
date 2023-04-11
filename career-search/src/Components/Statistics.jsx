@@ -12,7 +12,7 @@ const Statistics = () => {
       <div className="bg-violet-50 relative px-9 py-20">
         <h1 className="text-center heading">Statistics</h1>
         <div className="absolute bottom-0 left-0 ">
-          <img src={vectorTwo} className="w-32 " />
+          <img src={vectorTwo} className="w-32 " alt=""/>
         </div>
       </div>
       <div className='container py-20 '>

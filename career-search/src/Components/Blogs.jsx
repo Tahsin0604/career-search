@@ -7,7 +7,7 @@ const Blogs = () => {
       <div className="bg-violet-50 px-9 py-20 relative z-10">
         <h1 className="text-center heading">Blogs</h1>
         <div className="absolute bottom-0 left-0 ">
-          <img src={vectorTwo} className="w-32 " />
+          <img src={vectorTwo} className="w-32 " alt=""/>
         </div>
       </div>
       <div className='container py-20'>

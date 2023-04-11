@@ -111,7 +111,7 @@ const Header = () => {
       </div>
       {headingVector && (
         <div className="absolute top-0 right-0 ">
-          <img src={vectorOne} className="w-32 " />
+          <img src={vectorOne} className="w-32 " alt=""/>
         </div>
       )}
     </div>
