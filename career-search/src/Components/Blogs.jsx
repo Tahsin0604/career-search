@@ -17,8 +17,8 @@ const Blogs = () => {
 
         <h1 className='sub-title mt-8'>3.What is useRef?</h1>
         <p className='paragraph mt-2'>useRef is a hook that lets us reference a value that need not to required rendering.</p>
-
-
+        <h1 className='sub-title mt-8'>4.What is useMemo?</h1>
+        <p className='paragraph mt-2'>The useMemo is a hook that used to keep expensive, resource intensive functions from needlessly running.</p>
         
       </div>
       
