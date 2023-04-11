@@ -2,15 +2,18 @@ import React from 'react';
 import { useLoaderData } from "react-router-dom";
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer,Tooltip } from 'recharts';
 import Assignment from './Assignment';
-
+import vectorTwo from "/All Images/Vector.png";
 
 const Statistics = () => {
   const assignmentMarks = useLoaderData();
-  console.log(assignmentMarks);
+  
   return (
     <div >
-      <div className="bg-violet-50 px-9 py-20">
+      <div className="bg-violet-50 relative px-9 py-20">
         <h1 className="text-center heading">Statistics</h1>
+        <div className="absolute bottom-0 left-0 ">
+          <img src={vectorTwo} className="w-32 " />
+        </div>
       </div>
       <div className='container py-20 '>
         <div className='flex justify-center flex-col items-center md:flex-row'>

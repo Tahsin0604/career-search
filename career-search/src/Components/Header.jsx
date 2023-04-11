@@ -1,11 +1,23 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Bars3BottomRightIcon,XMarkIcon } from "@heroicons/react/24/solid";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import vectorOne from "/All Images/Vector-1.png";
 
 const Header = () => {
-  const [isOpen,setIsOpen]=useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [headingVector, setHeadingVector] = useState(false);
+  const location = useLocation();
+  const { pathname } = location;
+  useEffect(() => {
+    if (pathname !== "/") {
+      setHeadingVector(true);
+    } else {
+      setHeadingVector(false);
+    }
+  }, [pathname]);
+
   return (
-    <div className="bg-violet-50">
+    <div className="bg-violet-50 relative">
       <div className="container py-6 ">
         <div className="flex justify-between items-center">
           <Link to="/">
@@ -41,20 +53,34 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <Link to="/" className="btn hidden lg:inline-flex">
+          <Link
+            to="/"
+            className={`btn hidden lg:inline-flex ${
+              headingVector ? "z-10" : "z-auto"
+            }`}
+          >
             Start Applying
           </Link>
 
-          <button className="lg:hidden" onClick={()=>setIsOpen(!isOpen)}>
-            {
-              isOpen?<XMarkIcon className="h-6 w-6" />:<Bars3BottomRightIcon className="h-6 w-6" />
-            }
+          <button
+            className={`lg:hidden ${headingVector ? "z-10" : "z-auto"}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3BottomRightIcon className="h-6 w-6" />
+            )}
           </button>
         </div>
-        <ul className={`flex-col space-y-1 lg:hidden mt-4 divide-y-2 divide-slate-300 bg-gray-50 p-2 rounded-md ${isOpen?'flex':'hidden'}`}>
+        <ul
+          className={`flex-col space-y-1 lg:hidden mt-4 divide-y-2 divide-slate-300 bg-gray-50 p-2 rounded-md ${
+            isOpen ? "flex" : "hidden"
+          } `}
+        >
           <li>
             <NavLink
-              to="/statistics"
+              to="/statistics" onClick={() => setIsOpen(!isOpen)}
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Statistics
@@ -62,7 +88,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/applied-jobs"
+              to="/applied-jobs" onClick={() => setIsOpen(!isOpen)}
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Applied Jobs
@@ -70,19 +96,24 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/blogs"
+              to="/blogs" onClick={() => setIsOpen(!isOpen)}
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Blog
             </NavLink>
           </li>
           <li className="py-5">
-            <Link to="/" className="btn lg:hidden ">
+            <Link to="/" className="btn lg:hidden " onClick={() => setIsOpen(!isOpen)}>
               Start Applying
             </Link>
           </li>
         </ul>
       </div>
+      {headingVector && (
+        <div className="absolute top-0 right-0 ">
+          <img src={vectorOne} className="w-32 " />
+        </div>
+      )}
     </div>
   );
 };

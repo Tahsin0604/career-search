@@ -11,6 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { addJobs, getJObs } from "../utilities/FakeDB";
 import { AppliedJobsContext } from "../App";
+import vectorTwo from "/All Images/Vector.png";
 
 const JobDetails = () => {
   const job = useLoaderData();
@@ -32,8 +33,11 @@ const JobDetails = () => {
   };
   return (
     <div>
-      <div className="bg-violet-50 px-9 py-20">
+      <div className="bg-violet-50 relative px-9 py-20">
         <h1 className="text-center heading">Job Details</h1>
+        <div className="absolute bottom-0 left-0 ">
+          <img src={vectorTwo} className="w-32 " />
+        </div>
       </div>
       <div className="container py-20">
         <div className="flex flex-col lg:flex-row gap-6">

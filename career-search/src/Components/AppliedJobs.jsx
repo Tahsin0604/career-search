@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import AppliedJobCard from "./AppliedJobCard";
 import { AppliedJobsContext } from "../App";
+import vectorTwo from "/All Images/Vector.png";
 const AppliedJobs = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext || []);
   const [appliedList, setAppliedList] = useState(appliedJobs);
+  
 
   const filterJobs = (filter) => {
     if(filter!=="Default"){
@@ -21,8 +23,11 @@ const AppliedJobs = () => {
   };
   return (
     <div>
-      <div className="bg-violet-50 px-9 py-20">
+      <div className="bg-violet-50 relative px-9 py-20">
         <h1 className="text-center heading">Applied Jobs</h1>
+        <div className="absolute bottom-0 left-0 ">
+          <img src={vectorTwo} className="w-32 " />
+        </div>
       </div>
       <div className="container py-20">
         <div className="flex justify-end w-full">
