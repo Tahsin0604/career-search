@@ -8,6 +8,7 @@ import getData from "./Loaders/getCategoryAndJobData";
 import ErrorPage from "./Components/ErrorPage";
 import JobDetails from "./Components/JobDetails";
 import getJobDetails from "./Loaders/getSingleJob";
+import AppliedJobs from "./Components/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         path:"/job/:id",
         element:<JobDetails />,
         loader:getJobDetails
+      },
+      {
+        path:"/applied-jobs",
+        element:<AppliedJobs />
       }
     ]
   },

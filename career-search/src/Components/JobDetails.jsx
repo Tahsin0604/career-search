@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import {
   MapPinIcon,
@@ -7,9 +7,29 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { addJobs, getJObs } from "../utilities/FakeDB";
+import { AppliedJobsContext } from "../App";
+
 const JobDetails = () => {
   const job = useLoaderData();
-  console.log(job);
+  const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext || []);
+  const appliedJObBtn = (newJob) => {
+    let temporaryJobs = [];
+    const exist = appliedJobs.find(
+      (existingJobs) => parseInt(existingJobs.id) === parseInt(newJob.id)
+    );
+    if(exist){
+      toast("Already Applied for this job")
+    }
+    else{
+      temporaryJobs=[...appliedJobs,newJob]
+      toast.success("Just Applied")
+      setAppliedJobs(temporaryJobs);
+      addJobs(newJob.id,newJob.jobTitle)
+    }
+  };
   return (
     <div>
       <div className="bg-violet-50 px-9 py-20">
@@ -41,42 +61,52 @@ const JobDetails = () => {
               <div className="flex items-start gap-2 mt-3 ">
                 <CurrencyDollarIcon className="h-5 w-5 text-blue-600 mt-1" />
                 <h1 className="text-lg text-slate-600 font-semibold">
-                  Salary: <span className="mr-2 text-slate-500" >{job.salary}</span>
+                  Salary:{" "}
+                  <span className="mr-2 text-slate-500">{job.salary}</span>
                 </h1>
               </div>
               <div className="flex items-start gap-2 mt-3 ">
                 <CalendarDaysIcon className="h-5 w-5 text-blue-600 mt-1" />
                 <h1 className="text-lg text-slate-600 font-semibold">
-                Job Title: <span className="mr-2 text-slate-500" >{job.jobTitle}</span>
+                  Job Title:{" "}
+                  <span className="mr-2 text-slate-500">{job.jobTitle}</span>
                 </h1>
               </div>
               <h1 className="sub-title mt-7 pb-3  border-b border-solid border-slate-300">
-              Contact Information
+                Contact Information
               </h1>
-              
+
               <div className="flex items-start gap-2 mt-3 ">
                 <PhoneIcon className="h-5 w-5 text-blue-600 mt-1" />
                 <h1 className="text-lg text-slate-600 font-semibold">
-                Phone: <span className="mr-2 text-slate-500" >{job?.contactInformation?.phone}</span>
+                  Phone:{" "}
+                  <span className="mr-2 text-slate-500">
+                    {job?.contactInformation?.phone}
+                  </span>
                 </h1>
               </div>
               <div className="flex items-start gap-2 mt-3 ">
                 <EnvelopeIcon className="h-5 w-5 text-blue-600 mt-1" />
                 <h1 className="text-lg text-slate-600 font-semibold">
-                Email: <span className="mr-2 text-slate-500" >{job?.contactInformation?.email}</span>
+                  Email:{" "}
+                  <span className="mr-2 text-slate-500">
+                    {job?.contactInformation?.email}
+                  </span>
                 </h1>
               </div>
               <div className="flex items-start gap-2 mt-3 ">
                 <MapPinIcon className="h-5 w-5 text-blue-600 mt-1" />
                 <h1 className="text-lg text-slate-600 font-semibold">
-                Address: <span className="mr-2 text-slate-500" >{job?.location}</span>
+                  Address:{" "}
+                  <span className="mr-2 text-slate-500">{job?.location}</span>
                 </h1>
               </div>
             </div>
-            <button className="btn mt-6 w-full">Apply Now</button>
+            <button className="btn mt-6 w-full" onClick={()=>appliedJObBtn(job)}>Apply Now</button>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
